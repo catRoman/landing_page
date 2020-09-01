@@ -1,9 +1,190 @@
-h1{
-    color: blue;
+
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@700&family=Oswald&display=swap");
+html{
+  scroll-behavior: smooth;
 }
-body{
-    background-color: black;
+body {
+  margin: 0;
+  width:100%;
 }
-p{ 
-    color: red
+#wrapper1 {
+width:100%;
+height:100%;
 }
+.wrapper {
+  
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+/* nav bar-------------------*/
+#header {
+  height: 4em;
+  width: 100%;
+  margin: 0;
+  position: fixed;
+}
+
+#header-img {
+  width: 4em;
+  margin-left: 10em;
+  
+}
+#nav-bar {
+  height: 100%;
+  margin: 0;
+  
+  background-color: rgba(0, 0, 0, 0.3);
+}
+.nav-link:link {
+  color: white;
+  text-decoration: none;
+}
+.nav-link:visited {
+  color: white;
+}
+.nav-link:active {
+  color: blue;
+}
+.nav-link:hover {
+  color: red;
+}
+
+#nav-bar ol {
+  margin: 0;
+
+  list-style: none;
+  position: absolute;
+  right: 0px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+#nav-bar li {
+  display: inline;
+  margin: 0;
+  padding: 0;
+  right: 0px;
+}
+
+#nav-bar a {
+  font-family: "open sans condensed", sans-serif;
+  font-size: 1.75em;
+  padding: 0.25em;
+  margin-right: 0.25em;
+  letter-spacing: 0.1em;
+}
+/*--- end of nav css-------*/
+/*---- hero portions---*/
+
+.hero{
+   height: 100vh;
+  
+  background-size: cover;
+  background-position: 100% 100%;
+  background-repeat: no-repeat;
+ 
+}
+#hero1 {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-gap: 1em;
+  align-items:center;
+  
+ background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("https://lh3.googleusercontent.com/qYoNw2yf8iAiIacgeqRdOvRsyAe6yse6ko5ZvIasHa-RrJHfH7_Nt2bg1id_NRSCE12XA-o-y7cS2Eem4MBeXvzUUFUgGWp9Hrwtt0cLBCESNjQ5Vaud3kndCj-owq2mHkgm8Rv1mQ=w2400");
+  background-attachment:fixed;
+  font-family: "open sans condensed", sans-serif;
+  color: white; 
+}
+
+.welcome {
+  text-align: center;
+  letter-spacing: 0.1em;
+  font-size: 1em;
+}
+.welcome h1{
+  text-shadow: .2em .2em .2em red;
+  font-size: 1 em;
+  font-family: 'Oswald', sans-serif;
+}
+
+.sign-up{
+  margin:1em;
+  padding:1em;
+   background-color: rgba(0, 0, 0, 0.3);
+  display:grid;
+  grid-gap: 1em;
+   grid-auto-rows: minmax(15px, auto);
+  justify-items: start;
+  align-items: center;
+}
+ #submit{
+  grid-column:1/3;
+  justify-self:center;
+}
+.sign-up h2{
+  margin:0;
+  grid-column:1/3;
+  justify-self: center;
+  text-align:center;  
+}
+.sign-up p{
+  margin:0;
+  grid-column:1/3;
+  justify-self: center;
+  align-self: end;
+  text-align: center;
+}
+.welcome hr{
+  margin:0 4em;
+}
+form{
+  border:solid;
+  display:grid;
+    grid-template-columns: 1fr 1fr;
+  grid-gap: .25em;
+   grid-auto-rows: minmax(15px, auto);
+  justify-items: start;
+  align-items: center;
+}
+form > textarea{
+  
+}
+/*---hero1 stuff end---*/
+#hero2{
+  height:50vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.0)),
+    url("https://lh3.googleusercontent.com/9QZdf4nWCGr9UOSIE-GsDhdv8a-nETGYssXYBD_XbvojPGm_oyJraSUugGGY8bWlZBFDGsU_rRCXVOG7g4gpjI8JjDINCewhjaRg7phINx0tZma7E7KAgWAIK4v1umn6CySjfyPTPw=w2400");
+  background-position: 50% 50%;
+  
+  
+}
+/*----history stuff----*/
+.history{
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 1em 3em;
+  margin:2.5em 1em;
+  letter-spacing:.1em;
+}
+.history > div{
+  border-bottom: solid black;
+  margin:0 1em;
+}
+.history img{
+  float:left;
+  height: 6em;
+  width: 6em;
+  margin-right:1.2em;
+  margin-bottom: .6em;
+}
+.history h1{
+  grid-column:1/3;
+  text-align:center;
+ 
+}
+/*---end of history stuff---*/
+
+
+/*----half-hero image----*/
